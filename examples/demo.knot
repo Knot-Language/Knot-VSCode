@@ -1,0 +1,140 @@
+// Single line comment
+/* Multi
+   line
+   comment */
+
+// === Strings ===
+name = "Hello, World!\n"
+path = 'C:\Users\name\file.txt'
+raw = `no \n escape here`
+
+// === Numbers ===
+a = 42
+b = 0xFFi8
+c = 0b1010u32
+d = 0o777
+e = 3.14f32
+f = 1.5e10
+g = 1_000_000i64
+
+// === Constants ===
+isTrue = true
+isFalse = false
+nothing = null
+
+// === Variables & Types ===
+x: I32 = 10
+y: F64 = 3.14
+s: String = "hello"
+b: Bool = true
+any: Any = 42
+nullable: I32? = null
+
+// === Functions ===
+func add(a: I32, b: I32) -> I32 {
+    return a + b
+}
+
+// === Control Flow ===
+if x > 0 {
+    result = "positive"
+} else {
+    result = "zero or negative"
+}
+
+for i in 0..10 {
+    if i == 5 {
+        break
+    }
+    continue
+}
+
+while x < 100 {
+    x += 1
+}
+
+match x {
+    1 => "one"
+    2 => "two"
+    else => "many"
+}
+
+// === Class ===
+class Point {
+    x: I32
+    y: I32
+
+    func new(x: I32, y: I32) {
+        this.x = x
+        this.y = y
+    }
+
+    static func origin() -> Point {
+        return Point(0, 0)
+    }
+}
+
+// === Enum ===
+enum Color {
+    Red
+    Green
+    Blue
+}
+
+// === Exception Handling ===
+try {
+    riskyOperation()
+} catch e: Error {
+    throw e
+}
+
+// === Operators ===
+a == b
+a != b
+a <= b
+a >= b
+a && b
+a || b
+a << 1
+a >> 1
+a..b
+a ?? default
+a as I64
+a as! I64
+
+// === Import ===
+import "utils.knot"
+import "math.knot" as math
+
+// === Decorator / Wrap ===
+@log
+func greet() {
+}
+
+// === Abstract ===
+abstract class Shape {
+    abstract func area() -> F64
+}
+
+// === Generics ===
+func identity[T](x: T) -> T {
+    return x
+}
+
+class Box[T] {
+    value: T
+}
+
+// === Mixin / Private / Operator ===
+class Example {
+    private secret: String
+
+    mixin Logger
+
+    operator +(a: I32) -> I32 {
+    }
+}
+
+// === Assert ===
+assert x > 0
+assert x > 0, "x must be positive"

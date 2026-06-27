@@ -1,0 +1,58 @@
+{
+  "name": "knot-vscode",
+  "displayName": "Knot Language",
+  "description": "Knot language support for VS Code",
+  "version": "0.0.1",
+  "publisher": "Knot-Language",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Knot-Language/Knot-VSCode.git"
+  },
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:knot"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "knot",
+      "aliases": ["Knot", "knot"],
+      "extensions": [".knot"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "knot",
+      "scopeName": "source.knot",
+      "path": "./syntaxes/knot.tmLanguage.json"
+    }],
+    "configuration": {
+      "title": "Knot",
+      "properties": {
+        "knot.lsp.path": {
+          "type": "string",
+          "default": "knot",
+          "description": "Path to the knot compiler binary. Defaults to 'knot' (looked up in PATH)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.125.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
