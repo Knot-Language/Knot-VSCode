@@ -2,7 +2,7 @@
   "name": "knot-language",
   "displayName": "Knot Lang",
   "description": "Knot language support for VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Knot-Language",
   "icon": "logo.png",
   "license": "MIT",
