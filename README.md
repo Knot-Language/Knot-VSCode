@@ -1,5 +1,7 @@
 # Knot Language Support for VS Code
 
+![logo](logo.svg)
+
 Syntax highlighting and Language Server Protocol support for the [Knot](https://github.com/knot-lang/knot) programming language.
 
 ## Features
