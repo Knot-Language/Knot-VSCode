@@ -27,7 +27,6 @@ x: I32 = 10
 y: F64 = 3.14
 s: String = "hello"
 b: Bool = true
-any: Any = 42
 nullable: I32? = null
 
 // === Functions ===

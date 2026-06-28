@@ -8,7 +8,7 @@ Syntax highlighting and Language Server Protocol support for the [Knot](https://
 
 - **Syntax highlighting** — Full tokenization for `.knot` source files:
   - Keywords (`func`, `class`, `enum`, `if`, `match`, `for`, `while`, `import`, etc.)
-  - Primitive types (`I8`–`I64`, `U8`–`U64`, `F32`, `F64`, `String`, `Bool`, `Void`, `Any`)
+  - Primitive types (`I8`–`I64`, `U8`–`U64`, `F32`, `F64`, `String`, `Bool`, `Void`)
   - String literals (double-quoted with escapes, single-quoted raw, backtick raw)
   - Numeric literals (decimal, hex `0x`, binary `0b`, octal `0o`, float with suffixes)
   - Comments (`//` line, `/* */` block)
