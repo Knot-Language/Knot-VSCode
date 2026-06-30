@@ -130,7 +130,7 @@
 			"patterns": [
 				{
 					"name": "support.type.primitive.knot",
-					"match": "\\b(I8|I16|I32|I64|U8|U16|U32|U64|F32|F64|String|Bool|Null|Void)\\b"
+					"match": "\\b(I8|I16|I32|I64|U8|U16|U32|U64|F32|F64|Bool|Null|Void)\\b"
 				}
 			]
 		},

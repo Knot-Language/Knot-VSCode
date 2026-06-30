@@ -25,7 +25,7 @@ nothing = null
 // === Variables & Types ===
 x: I32 = 10
 y: F64 = 3.14
-s: String = "hello"
+s: Array[Char] = "hello"
 b: Bool = true
 nullable: I32? = null
 
@@ -126,7 +126,7 @@ class Box[T] {
 
 // === Mixin / Private / Operator ===
 class Example {
-    private secret: String
+    private secret: Char
 
     mixin Logger
 
